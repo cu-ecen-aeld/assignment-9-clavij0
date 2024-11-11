@@ -1,0 +1,6 @@
+
+config BR2_PACKAGE_LDD
+	bool "ldd"
+	help
+	  Includes the hello.c hello.ko to the package.
+	  Used to understand buildroot external trees and package builds.

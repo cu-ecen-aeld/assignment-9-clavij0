@@ -1,0 +1,32 @@
+#!/bin/sh
+#load and unload modules hello, scull and faulty
+
+case "$1" in
+    start)
+    #Since the modules where all loaded in the Kernel I just have to call them to load
+        echo "Loading scull driver..."
+        scull_load
+
+        echo "Loading faulty driver..."
+        module_load faulty
+
+        echo "Loading hello driver..."
+        modprobe hello
+        ;;
+    stop)
+    #Since the modules where all loaded in the Kernel I just have to call them to unload
+        echo "Unloading scull driver..."
+        scull_unload
+        echo "Unloading faulty driver..."
+        module_unload faulty
+
+        echo "Unlading hello driver..."
+        rmmod hello
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1;
+        ;;
+esac
+
+exit 0

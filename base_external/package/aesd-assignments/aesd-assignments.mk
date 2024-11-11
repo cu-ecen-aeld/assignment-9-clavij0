@@ -17,7 +17,7 @@ AESD_ASSIGNMENTS_SITE ='https://github.com/cu-ecen-aeld/assignments-3-and-later-
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 #AESD_ASSIGNMENTS_OVERRIDE_SRCDIR=/home/clavijo/Documents/Coursera/LinuxSPIBuildroot/finder-app
- 
+
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
@@ -38,6 +38,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/bin	
 	$(INSTALL) -m 0755 $(@D)/server/startup-aesdsocket.sh $(TARGET_DIR)/etc/init.d/S99aesdsocket
+	
 
 endef
 
