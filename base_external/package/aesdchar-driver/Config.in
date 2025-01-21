@@ -1,0 +1,5 @@
+config BR2_PACKAGE_AESDCHAR_DRIVER
+	bool "aesdchar-driver"
+	help
+	  Includes the aesdchar-driver.c aesdchar-driver.ko to the package.
+	  Used to understand buildroot external trees and package builds.
