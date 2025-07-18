@@ -6,8 +6,8 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 'ed6b360'
-# Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
+AESD_ASSIGNMENTS_VERSION = '0603a8b'
+# Note: Be sure to reference the *ssh* repository URL here (not https) to work properly 'ed6b360'
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE ='https://github.com/cu-ecen-aeld/assignments-3-and-later-clavij0.git'
